@@ -46,3 +46,9 @@ for(let i=0;i<30;i++){
     heart.style.top=Math.random()*window.innerHeight+"px";
     body.appendChild(heart);
 }
+document.addEventListener("click", function () {
+  const music = document.getElementById("bgMusic");
+  if (music && music.paused) {
+    music.play();
+  }
+}, { once: true });
